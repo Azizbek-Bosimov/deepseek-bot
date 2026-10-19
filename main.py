@@ -6,7 +6,7 @@ BOT_TOKEN = "8910890961:AAEbfbSxJ8HbXMosOhRxB1f2C9BOJojEiqw"
 GEMINI_KEY = "AQ.Ab8RN6KMx8aUYERZsZlg_-ThEuCBI6to1fCEyimJ83vh2kIQAg"
 
 bot = telebot.TeleBot(BOT_TOKEN)
-client = genai.Client(api_key=GEMINI_KEY)
+client = genai.Client(vertexai=True, api_key=GEMINI_KEY)
 
 @bot.message_handler(func=lambda message: True)
 def chat_with_gemini(message):
