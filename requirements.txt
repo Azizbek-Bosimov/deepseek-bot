@@ -1,3 +1,2 @@
 pyTelegramBotAPI
-pip install --upgrade google-genai
-
+google-genai
